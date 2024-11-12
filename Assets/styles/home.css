@@ -1,0 +1,1078 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  gap: 2.2rem;
+  max-width: 1500px;
+  width: 100%;
+  height: inherit;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+
+.brand-name {
+  font-weight: 900;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  color: rgb(6, 255, 6);
+  text-shadow: 5px 5px 5px black;
+  cursor: pointer;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-ul li a {
+  text-decoration: none;
+  color: rgb(24 237 24);
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nav-ul li a:hover,
+.nav-ul li a:focus {
+  color: white;
+}
+
+.nav-ul li a:active {
+  color: greenyellow;
+}
+
+/* Home-hero section */
+.layer {
+  background-image: url(../images/BGREEN-BG.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.homepage {
+  background-color: rgba(16, 117, 33, 0.5);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero {
+  font-family: Playpen sans;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.hero-heading {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 1rem black;
+}
+
+.slogan {
+  display: block;
+  color: rgb(6, 255, 6);
+  font-size: 40px;
+  font-weight: 900;
+  padding: 0.5rem 0;
+  text-shadow: 0 0 1rem black;
+  cursor: pointer;
+}
+
+.hero-pgh {
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 1rem black;
+  cursor: pointer;
+}
+
+.green-life {
+  display: block;
+}
+
+.hero-btn {
+  font-size: 25px;
+  font-weight: 700;
+  background-color: green;
+  color: white;
+  outline: 1px solid rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: 2rem;
+  transition: all ease 500ms;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: linear-gradient(green, rgba(0, 0, 0, 0.8));
+  color: #d3baba;
+  border-radius: 20px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* ABOUT PAGE */
+.about-page {
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  height: 100%;
+  width: 100%;
+}
+
+.about-heading {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 5px;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  color: rgb(6, 255, 6);
+}
+.about-list {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.about-1,
+.about-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  gap: 5%;
+}
+
+.about-1 {
+  flex-direction: row-reverse;
+}
+
+.about-1 p,
+.about-2 p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  background-color: black;
+  outline: 1px solid green;
+  color: white;
+  width: 45%;
+  height: 100%;
+  margin: 0;
+  padding: 2.5rem 1rem;
+}
+
+.about-1 p {
+  border-radius: 15px 0 0;
+}
+
+.about-2 p {
+  border-radius: 0 0 15px 0;
+  margin-top: 15px;
+}
+
+i {
+  text-transform: lowercase;
+  font-style: normal;
+}
+
+.nursing,
+.research {
+  width: 40%;
+  height: 250px;
+  outline: 1px solid green;
+  border-radius: 15px 15px 0 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.nursing {
+  border-radius: 0 15px 0 0;
+  margin-bottom: 10px;
+}
+
+.research {
+  border-radius: 0 0 0 15px;
+  margin-top: 10px;
+}
+
+/* SERVICES SECTION */
+.services-container {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.service-heading {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+  font-family: sofadi one;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.services-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  place-items: center;
+  padding: 1rem 4rem;
+}
+
+.port-image {
+  width: 100%;
+  height: inherit;
+}
+
+figure {
+  width: 100%;
+  max-width: 400px;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 10px 10px 10px grey;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 0em;
+  position: absolute;
+  top: 0em;
+  bottom: 0em;
+  right: 0em;
+  left: 0em;
+  transform: translateY(150%);
+  z-index: 1;
+  color: rgb(41, 255, 41);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+figcaption p {
+  font-size: 20px;
+  font-weight: 700px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 0 20px;
+}
+
+[class^="item-"]:hover figcaption {
+  transform: translateY(0%);
+}
+
+.basic-btn {
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.basic-btn:hover,
+.basic-btn:focus {
+  color: white;
+}
+
+/* Research section */
+.research_section {
+  background-color: rgb(8, 241, 8);
+  width: 100%;
+  height: 100%;
+}
+
+.research-heading {
+  font-size: 40px;
+  text-align: left;
+  padding: 2rem 2rem 0;
+  margin: 0;
+}
+
+.research-container {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  padding: 1rem 2rem;
+  margin: auto;
+  align-items: first baseline;
+  gap: 2rem;
+}
+
+.research-text-container {
+  width: 50%;
+  font-style: italic;
+}
+
+.research_text {
+  font-size: 25px;
+  font-family: Sofadi One;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  margin: 0;
+  color: white;
+  text-align: left;
+  padding: 2rem 1rem;
+  background: linear-gradient(green, rgba(0, 0, 0, 0.8));
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px 0 10px 0;
+}
+
+.call-to-action {
+  width: 50%;
+}
+
+.click-text {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: sofadi one;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.research-btn {
+  padding: 15px 20px;
+  font-size: 20px;
+  background-color: #000000;
+  color: rgb(41, 255, 41);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background: linear-gradient(to left, green, rgba(0, 0, 0, 0.8));
+}
+
+.research-btn:hover {
+  background: linear-gradient(green, rgba(0, 0, 0, 0.8));
+  color: black;
+}
+
+/* footer section */
+.footer_section {
+  background-color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  color: green;
+}
+
+.closure {
+  display: grid;
+  grid-template-columns: [col-start] 2fr [col-2] 1fr [col-end];
+  align-items: first baseline;
+  justify-content: center;
+  grid-gap: 1rem;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  margin: auto;
+}
+
+.foot_brand_name {
+  /* font-family: sofadi one; */
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(6, 255, 6);
+  margin: 0;
+}
+
+.widget {
+  font-size: 18px;
+  color: rgba(41, 255, 41, 0.767);
+  min-width: 220px;
+}
+
+.foot-navbar {
+  padding-left: 2rem;
+}
+
+.company {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  color: rgba(8, 241, 8);
+}
+
+.foot-navbar ul {
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+}
+
+.nav_contents {
+  text-decoration: none;
+  color: rgba(41, 255, 41, 0.774);
+}
+
+.social_media {
+  padding: 0;
+  margin: 0;
+  color: rgba(41, 255, 41, 0.774);
+}
+
+.social-media-head {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(8, 241, 8);
+}
+
+.reach_out {
+  font-size: 18px;
+  color: rgba(41, 255, 41, 0.774);
+  margin: 5px 0;
+}
+
+.soc-media_icons {
+  display: flex;
+  gap: 6px;
+}
+
+.soc-media_icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(30, 252, 33);
+}
+
+@media (max-width: 60.25rem) {
+  .nav-ul {
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .nav-ul li a {
+    font-size: 16px;
+  }
+
+  .home-hero {
+    padding: 2rem 1rem;
+  }
+
+  .brand-name {
+    font-size: 25px;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+  }
+
+  .hero-pgh {
+    font-size: 22px;
+  }
+
+  .slogan {
+    font-size: 35px;
+  }
+
+  .hero-btn {
+    font-size: 20px;
+  }
+
+  /* ABOUT PAGE */
+  .about-heading {
+    font-size: 30px;
+  }
+
+  .about-1 p,
+  .about-2 p {
+    font-size: 18px;
+  }
+
+  .nursing,
+  .research {
+    height: 250px;
+  }
+
+  /* PORTFOLIO SECTION */
+  .service-heading {
+    font-size: 30px;
+  }
+
+  figure {
+    height: 200px;
+  }
+
+  .services-items {
+    padding: 1rem 2rem 2rem;
+  }
+
+  figcaption p {
+    font-size: 18px;
+    margin: 4px;
+  }
+
+  /* RESEARCH SECTION */
+  .research-heading {
+    font-size: 30px;
+  }
+
+  .research_text {
+    font-size: 25px;
+  }
+
+  .click-text {
+    font-size: 20px;
+  }
+
+  .research-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  /* FOOTER SECTION */
+  .foot_brand_name {
+    font-size: 25px;
+  }
+
+  .company,
+  .social-media-head {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  figcaption {
+    transform: translateY(0%);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  /* RESEARCH SECTION */
+  .research-heading {
+    font-size: 25px;
+  }
+
+  .research_text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 40rem) {
+  /* navigation bar */
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .brand-name {
+    font-size: 25px;
+  }
+  .nav-ul {
+    gap: 1.2rem;
+  }
+
+  .nav-ul li a {
+    font-size: 14px;
+  }
+
+  .homepage {
+    padding: 1.5rem;
+  }
+
+  .home-hero {
+    padding: 2rem 0.5rem;
+  }
+
+  .hero-heading {
+    font-size: 25px;
+  }
+
+  .slogan {
+    font-size: 35px;
+  }
+
+  .hero-pgh {
+    font-size: 20px;
+  }
+
+  .hero-btn {
+    font-size: 18px;
+  }
+
+  /* ABOUT PAGE */
+  .about-heading {
+    font-size: 25px;
+  }
+
+  .about-1 p,
+  .about-2 p {
+    font-size: 16px;
+    padding: 1rem 0.5rem;
+  }
+
+  .nursing,
+  .research {
+    width: 42%;
+    height: 210px;
+  }
+
+  /* PORTFOLIO SECTION */
+  .service-heading {
+    font-size: 25px;
+  }
+
+  .services-items {
+    gap: 7px;
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  figure {
+    height: 150px;
+  }
+
+  figcaption p {
+    font-size: 16px;
+    line-height: 15px;
+  }
+
+  .basic-btn {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .research-heading {
+    font-size: 20px;
+  }
+
+  .research_text {
+    font-size: 18px;
+    padding: 1rem;
+  }
+
+  .click-text {
+    font-size: 18px;
+  }
+
+  .research-btn {
+    font-size: 16px;
+  }
+
+  /* FOOTER SECTION */
+  .foot-navbar {
+    padding: 0 0 0 16px;
+  }
+
+  .social-media-head,
+  .company {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .soc-media_icons img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 30rem) {
+  .homepage {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .hero-heading {
+    font-size: 20px;
+  }
+
+  .slogan {
+    font-size: 30px;
+  }
+
+  .hero-pgh {
+    font-size: 18px;
+  }
+
+  .hero-btn {
+    font-size: 18px;
+  }
+  /* ABOUT PAGE */
+  .about-heading {
+    font-size: 25px;
+  }
+
+  .about-1,
+  .about-2 {
+    gap: 4%;
+  }
+  .about-1 p,
+  .about-2 p {
+    font-size: 14px;
+  }
+
+  .nursing,
+  .research {
+    height: 180px;
+  }
+
+  /* PORTFOLIO SECTION */
+  .service-heading {
+    font-size: 20px;
+  }
+
+  .services-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 0.5rem 2rem 2rem;
+  }
+
+  figure {
+    height: 150px;
+  }
+
+  .research_text {
+    font-size: 16px;
+    padding: 0.8rem;
+  }
+
+  .click-text {
+    font-size: 16px;
+  }
+
+  .research-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  /* FOOTER SECTION */
+  .closure {
+    display: grid;
+    grid-template-columns: [col-start] 1fr [col-2] 1fr [col-end];
+    justify-content: space-between;
+  }
+
+  .GADROIT {
+    grid-column: 1/3;
+  }
+
+  .foot-navbar {
+    grid-column: 1/2;
+    padding: 0;
+  }
+
+  .company,
+  .social-media-head {
+    font-size: 18px;
+  }
+
+  .soc-media_icons img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .copyright {
+    font-size: 15px;
+  }
+
+  .widget {
+    font-size: 17px;
+    grid-column: 1/3;
+  }
+
+  .nav_contents {
+    font-size: 17px;
+    margin-top: 0;
+  }
+
+  .reach_out {
+    font-size: 17px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 26.6rem) {
+  header {
+    height: 60px;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    width: 38px;
+    height: 38px;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .brand-name {
+    font-size: 22px;
+  }
+
+  .hero-heading {
+    font-size: 18px;
+  }
+
+  .slogan {
+    font-size: 22px;
+  }
+
+  .hero-pgh {
+    font-size: 16px;
+  }
+
+  .hero-btn {
+    margin-top: 16px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .about-heading {
+    font-size: 18px;
+  }
+
+  .about-1,
+  .about-2 {
+    gap: 4%;
+    width: 95%;
+  }
+  .about-1 p,
+  .about-2 p {
+    font-weight: 200;
+    font-size: 14px;
+    width: 50%;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .nursing,
+  .research {
+    width: 45%;
+    height: 140px;
+  }
+
+  /* PORTFOLIO SECTION */
+  .service-heading {
+    font-size: 18px;
+  }
+
+  .services-items {
+    padding: 0.25rem 1.5rem 2rem;
+  }
+
+  figure {
+    height: 120px;
+  }
+
+  figcaption p {
+    font-size: 14px;
+  }
+
+  figcaption {
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-bottom: 10px;
+  }
+
+  .basic-btn {
+    padding: 5px;
+  }
+
+  .research-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .research-heading {
+    font-size: 18px;
+  }
+
+  .research-text-container {
+    width: 60%;
+  }
+
+  .research_text {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0.8rem;
+  }
+
+  .call-to-action {
+    width: 40%;
+  }
+
+  .click-text {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .research-btn {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  /* FOOTER SECTION */
+  .footer_section {
+    padding: 1.5rem;
+  }
+
+  .foot_brand_name {
+    font-size: 20px;
+  }
+
+  .company,
+  .social-media-head {
+    font-weight: 520;
+  }
+
+  .soc-media_icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  /* js classList */
+  .space {
+    height: max-content;
+  }
+
+  .control {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: left;
+    padding: 1rem;
+    width: 40%;
+    height: max-content;
+    margin: 0;
+    /* transition: all 0.5s ease-in-out; */
+    z-index: 1;
+  }
+
+  .listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(39, 235, 39);
+  }
+}
+
+@media (max-width: 20rem) {
+  .brand-name {
+    font-size: 20px;
+  }
+
+  /* homepage */
+  .hero-heading {
+    font-size: 16px;
+  }
+
+  .slogan {
+    font-size: 20px;
+  }
+
+  .hero-pgh {
+    font-size: 14px;
+  }
+
+  .hero-btn {
+    font-size: 16px;
+  }
+
+  /* PORTFOLIO SECTION */
+  .services-items {
+    padding: 0.5rem 2rem 2rem;
+  }
+
+  figure {
+    height: 100px;
+  }
+
+  /* FOOTER SECTION */
+  .foot_brand_name {
+    font-size: 18px;
+  }
+
+  .widget,
+  .nav_contents,
+  .reach_out {
+    font-size: 15px;
+  }
+
+  .company,
+  .social-media-head {
+    font-size: 16px;
+  }
+
+  .soc-media_icons img {
+    width: 18px;
+    height: 18px;
+  }
+}
